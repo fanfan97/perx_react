@@ -13,12 +13,12 @@ export const Dashboard = (props) => {
         </div>
       </header>
       
-      <div className="Dashboard-body Dashbaord-div-flex">
-          {props.orgs.isSearch && props.repo.isSearch && <div data-testid={"repo-div-container"} className='Dashboard-div-body'>
+      <div data-testid={"repo-orgs-container"} className="Dashboard-body Dashbaord-div-flex">
+          {props.orgs.isSearch && props.repo.isSearch && <div className='Dashboard-div-body'>
             <RepoContainer data_arr={props.repo.repos_arr} isSearch={props.repo.isSearch} title={"Public Repositories"}/>
           </div>}
 
-          {props.orgs.isSearch && props.repo.isSearch && <div data-testid={"orgs-div-container"} className='Dashboard-div-body'>
+          {props.orgs.isSearch && props.repo.isSearch && <div className='Dashboard-div-body'>
             <OrgContainer data_arr={props.orgs.orgs_arr} isSearch={props.orgs.isSearch} title={"Organization"}/>
           </div>}
 

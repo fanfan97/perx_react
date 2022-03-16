@@ -10,9 +10,7 @@ test('Render Dashboard Component', () => {
       <Dashboard/>
     </Provider>);
   const searchbarComponent = screen.getByTestId("searchbar-comp");
-  const repoContainer = screen.getByTestId("repo-div-container");
-  const orgsContainer = screen.getByTestId("orgs-div-container");
+  const repo_orgs_Container = screen.getByTestId("repo-orgs-container");
   expect(searchbarComponent).toBeInTheDocument();
-  expect(repoContainer).toBeInTheDocument();
-  expect(orgsContainer).toBeInTheDocument();
+  expect(repo_orgs_Container).toBeInTheDocument();
 });
