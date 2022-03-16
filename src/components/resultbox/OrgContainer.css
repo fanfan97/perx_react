@@ -1,0 +1,35 @@
+
+.Org-title{
+    font-size: calc(8px + 2vmin);
+    color:#FFF;
+    margin-block: 5px;
+    cursor: pointer;
+}
+.Org-avatar{
+    width: calc(15px + 5vmin);
+    height: calc(15px + 5vmin);
+    margin: 5px 10px 5px 0;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color:  rgba(255,255,255,0.2);
+    cursor: pointer;
+
+}
+.Org-description{
+    font-size: calc(8px + 1vmin);
+    color:#FFF;
+    margin-block: 5px;
+    
+}
+.Org-title-container{
+    display: flex;
+    align-items: center;
+}
+.bottom-width{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+.Icon-size{
+    font-size: calc(8px + 1vmin);
+}

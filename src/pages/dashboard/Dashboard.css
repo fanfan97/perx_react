@@ -1,0 +1,44 @@
+.Dashboard-header{
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+}
+.Dashboard-body{
+    background-color: #282c34;
+    min-height: 90vh;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+}
+.Dashbaord-div-flex{
+  flex-direction: column;
+}
+
+.Dashboard-msg-box{
+  margin:auto;
+  align-self: center;
+  text-align: center;
+}
+.msg-text{
+    font-size: calc(10px + 2vmin);
+    color:#FFF
+}
+@media (min-width: 768px) {
+  .Dashbaord-div-flex{
+    flex-direction: row;
+  } 
+}
+
+
+.Dashboard-div-body{
+  flex:1;
+  margin: 10px;
+}

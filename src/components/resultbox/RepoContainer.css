@@ -1,0 +1,25 @@
+
+.Repo-title{
+    font-size: calc(8px + 2vmin);
+    color:#FFF;
+    margin-block: 5px;
+    cursor: pointer;
+}
+.Repo-date{
+    font-size: calc(8px + 1vmin);
+    color:#FFF;
+    margin-block: 5px;
+    
+}
+.Repo-title-container{
+    display: flex;
+    align-items: self-end;
+}
+.bottom-width{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+.Icon-size{
+    font-size: calc(8px + 1vmin);
+}

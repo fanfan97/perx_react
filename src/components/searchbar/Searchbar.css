@@ -1,0 +1,20 @@
+
+.SearchBar-div-left{
+    display: flex;
+    flex:2;
+}
+.SearchBar-div-right{
+    display: flex;
+    flex:0;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+}
+.SearchBar-input{
+    width:100%;
+    height:30;background:#0D1116;
+    font-size: calc(10px + 2vmin);
+    padding:10px; border-radius:10px;
+    border: 1px solid #FFF;
+    color:#FFF
+}

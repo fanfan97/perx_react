@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, createContext, useContext } from 'react';
 
-function App() {
+import { connect } from 'react-redux'
+import {GetReposAction,ClearReposAction} from './actions/repoActions'
+import {GetOrgsAction,ClearOrgsAction} from './actions/orgActions'
+import { AppContext } from './Contexts';
+import Dashboard from './pages/dashboard/Dashboard'
+
+
+export const App = (props) => {
+  
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContext.Provider value={props}>
+      <Dashboard />
+    </AppContext.Provider>
+  )
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return{
+    myCount:state.counter,
+    repo:state.repo
+  }
+  
+}
+
+const mapDispatchToProps = {GetReposAction,ClearReposAction,ClearOrgsAction,GetOrgsAction}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
